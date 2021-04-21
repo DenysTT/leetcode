@@ -25,8 +25,8 @@ def main(nums, target):
             print(result[target - nums[i]], i)
         if nums[i] not in result:
             result[nums[i]] = i
+            
 
-
-main([3,2,4], 6)
-
-
+  
+if __name__ == "__main__":
+    main([3,2,4], 6)
