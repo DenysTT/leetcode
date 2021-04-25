@@ -13,11 +13,13 @@ characters.
 def find_longest_substring(str):
     s = list(str)
     max_lenght = start = 0
-    used_char = {}
+    used_char = {} 
     for i, v in enumerate(s):
-        if v in used_char and i > used_char[v]:
-            start = used_char[v] + 1
-        else:
-            max_lenght = max(max_lenght, i - start + 1)
-        used_char[v] = i 
+        if v in used_char:
+            start = max(start, used_char[v])
+        max_lenght = max(max_lenght, i - start + 1)
+        used_char[v] = i + 1 
     return max_lenght
+
+if __name__ == "__main__":
+    find_longest_substring("tmmzuxt")
