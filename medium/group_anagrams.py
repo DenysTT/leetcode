@@ -29,5 +29,5 @@ def groupAnagrams(strs):
             sort_dict[sorted_v] = [s]
     return [arr for arr in sort_dict.values()]
 
-if __name == '__main__':
+if __name__ == '__main__':
     groupAnagrams(["eat","tea","tan","ate","nat","bat"])

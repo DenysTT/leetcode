@@ -29,11 +29,11 @@ def majorityElement(nums):
             freq[i] += 1
         else:
             freq[i] = 1
-    return freq
+    return max(freq.keys(), key=freq.get)
         
 def majorityElement_sort(nums):
     nums.sort()
     return nums[len(nums)//2]
 
 if __name__ == "__main__":
-    majorityElement_sort([3,2,3])
+    majorityElement([3,2,3])

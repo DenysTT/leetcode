@@ -12,7 +12,7 @@ Input: nums = [-7,-3,2,3,11]
 Output: [4,9,9,49,121]
 """
 
-def square_sorted_arr(s):
+def square_sorted_arr(nums):
         if not nums:
             return []
         result = [i**2 for i in nums]
