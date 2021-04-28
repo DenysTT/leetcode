@@ -29,7 +29,7 @@ def majorityElement(nums):
             freq[i] += 1
         else:
             freq[i] = 1
-    return max(freq.keys(), key=freq.get)
+    return max(freq, key=freq.get)
         
 def majorityElement_sort(nums):
     nums.sort()
