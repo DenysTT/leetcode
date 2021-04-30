@@ -120,7 +120,7 @@ if __name__ == "__main__":
     undergroundSystem.checkIn(27, "Leyton", 10)
     undergroundSystem.checkIn(12, "Leyton", 10)
     undergroundSystem.checkOut(12, "Paradise", 16)
-    undergroundSystem.checkOut(45, "Paradise", 8)
+    undergroundSystem.checkOut(45, "Paradise", 15)
     undergroundSystem.checkOut(27, "Waterloo", 20)
     undergroundSystem.checkOut(32, "Cambridge", 22)
     undergroundSystem.getAverageTime("Leyton", "Paradise")
